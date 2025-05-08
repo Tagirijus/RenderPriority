@@ -16,8 +16,8 @@ class TaskHelperMod extends CoreTaskHelper
     {
         $html = '<span class="task-priority" title="'.t('Task priority').': '.$priority.'">';
         $html .= '<span class="ui-helper-hidden-accessible">'.t('Task priority').' </span>';
-        $html .= '<p style="display:inline; font-weight:bold; font-size: 1.25em">';
-        $html .= $this->helper->text->e($priority > 0 ? str_repeat(' !', $priority) : '');
+        $html .= '<p style="display:inline; font-weight:bold;">';
+        $html .= $this->helper->text->e($priority > 0 ? str_repeat('❗', $priority) : '');
         $html .= '</p>';
         $html .= '</span>';
 
